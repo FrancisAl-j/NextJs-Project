@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Navbar = () => {
+const AdminNavbar = () => {
   return (
     <header className="w-full bg-black">
       <nav className="container flex justify-between m-auto items-center">
@@ -8,16 +8,10 @@ const Navbar = () => {
           <img src="/CPOS.png" alt="CPOS-Logo" width={140} height={70} />
         </Link>
 
-        <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>Business</li>
-          <li>Support</li>
-          <button>Get A Quote</button>
-        </ul>
+        <button>Sign in</button>
       </nav>
     </header>
   );
 };
 
-export default Navbar;
+export default AdminNavbar;
