@@ -1,0 +1,26 @@
+import Form from "next/form";
+import FormReset from "./FormReset";
+
+const SearchForm = () => {
+  const query = "Text";
+
+  return (
+    <Form action="/" scroll={false} className="form">
+      <input
+        type="text"
+        defaultValue={query}
+        placeholder="Search Blogs..."
+        className="search-form bg-white text-black"
+      />
+
+      <div className="absolute top-2 right-2 flex gap-2">
+        {query && <FormReset />}
+        <button type="submit" className="text-black">
+          S
+        </button>
+      </div>
+    </Form>
+  );
+};
+
+export default SearchForm;

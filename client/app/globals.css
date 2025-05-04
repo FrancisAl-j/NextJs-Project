@@ -22,6 +22,18 @@ body {
   background-attachment: fixed;
   position: relative;
 }
+.form {
+  position: relative;
+
+  width: 100%;
+}
+
+.search-form {
+  border: 1px black solid;
+  padding: 7px 10px;
+  border-radius: 10px;
+  width: 100%;
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
