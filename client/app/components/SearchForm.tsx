@@ -1,12 +1,11 @@
 import Form from "next/form";
 import FormReset from "./FormReset";
 
-const SearchForm = () => {
-  const query = "Text";
-
+const SearchForm = ({ query }: { query?: string }) => {
   return (
     <Form action="/" scroll={false} className="form">
       <input
+        name="query" // The name is imporntant should be the same as the props or "query"
         type="text"
         defaultValue={query}
         placeholder="Search Blogs..."
