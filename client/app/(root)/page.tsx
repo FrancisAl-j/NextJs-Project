@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Hero from "../components/Hero";
-import SearchForm from "../components/SearchForm";
+import Hero from "@/components/Hero";
+import SearchForm from "../../components/SearchForm";
 
 export default async function Home({
   searchParams,
@@ -8,8 +8,6 @@ export default async function Home({
   searchParams: Promise<{ query?: string }>;
 }) {
   const query = (await searchParams).query;
-
-  console.log(query);
 
   return (
     <div>
@@ -20,6 +18,9 @@ export default async function Home({
         query={query}
       />
       <h1 className="text-3xl ">Hello Next Project</h1>
+
+      {/* Wrap of all blogs/products */}
+      <section></section>
     </div>
   );
 }

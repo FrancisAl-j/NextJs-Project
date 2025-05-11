@@ -1,5 +1,6 @@
 "use client";
 
+import { X } from "lucide-react";
 import Link from "next/link";
 
 const FormReset = () => {
@@ -12,9 +13,11 @@ const FormReset = () => {
     <button
       type="reset"
       onClick={reset}
-      className="cursor-pointer bg-red-300 px-2 rounded-full text-red-700 font-bold "
+      className="cursor-pointer bg-red-300 p-1 rounded-full text-red-700 font-bold "
     >
-      <Link href="/">X</Link>
+      <Link href="/">
+        <X className="size-4" />
+      </Link>
     </button>
   );
 };
