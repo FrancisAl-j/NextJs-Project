@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="w-full bg-black ">
+    <header className="w-full bg-black shadow-2xl shadow-black">
       <nav className="container flex justify-between m-auto items-center py-5">
         <Link href="/">
           <img src="/CPOS.png" alt="CPOS-Logo" width={140} height={70} />

@@ -35,6 +35,15 @@ body {
   width: 100%;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  width: 100%;
+  margin: 30px auto;
+  gap: 30px;
+  row-gap: 20px;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
